@@ -438,7 +438,8 @@ header .container nav .menu {
     cursor: pointer;
 }
 .portfolio .container .ul li {
-    padding: 10px 20px;
+    padding: 10px 15px;
+    margin: 2px;
 }
 .portfolio .container .ul .active {
     color: white;
@@ -793,3 +794,336 @@ header .container nav .menu {
     }
 }
    /* end skills */
+   /*  start  Quote  */
+.Quote {
+    background-image: url(../image/Quote.jpeg);
+    background-size: cover;
+    padding-bottom: var(--section-padding);
+    padding-top: var(--section-padding);
+    text-align: center;
+}
+
+.Quote p {
+    padding: 50px;
+    font-size: x-large;
+    font-weight: bold;
+}
+   /*  end  Quote  */
+    /* start pricing  */
+
+.pricing .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pricing .container .box-pri {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+}
+
+.pricing .container .box-pri > p {
+    padding: 20px;
+    border-top: 1px solid var(--main-color);
+    font-size: 15px;
+}
+
+.pricing .container .box-pri .price {
+    border-top: 1px solid var(--main-color);
+    padding: 35px 0 45px;
+    width: 250px;
+}
+
+@media (max-width: 767px)  {
+    .pricing .container {
+        flex-direction: column;
+    }
+}
+
+.pricing .container .box-pri .value sup{
+    top: -1.5em;
+    font-size: 20px;
+}
+
+.pricing .container .box-pri .value span {
+    font-size: 53px;
+    font-weight: bold;
+}
+
+.pricing .container .box-pri ul {
+    list-style-type: none;
+    padding: 20px;
+    border-bottom: 1px solid var(--main-color);
+    border-top: 1px solid var(--main-color);
+    padding-bottom: 0;
+}
+
+.pricing .container .box-pri ul li {
+    margin: 20px 0;
+    padding-bottom: 20px;
+    position: relative;
+}
+.pricing .container .box-pri ul li:after {
+    border-bottom: 1px solid var(--main-color);
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 50%;
+    margin-left: -65px;
+    position: absolute;
+    width: 130px;
+}
+
+.pricing .container .box-pri ul li:last-child {
+    padding: 0;
+}
+
+.pricing .container .box-pri ul li:last-child:after {
+    border: none;
+}
+
+.pricing .container .box-pri a button{
+    border: 1px solid var(--main-color);
+    margin-top: 35px;
+    padding: 10px 35px;
+    text-transform: capitalize;
+    background-color: transparent;
+}
+.pricing .container .box-pri a button:hover{
+    color: var(--main-color);
+    letter-spacing: 2px;
+    transition: 1s;
+    background-color: var(--main-color);
+    color: #000;
+}
+
+.special-plan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    flex-direction: column;
+}
+
+.special-plan p {
+    font-size: 25px;
+    text-transform: none;
+}
+
+@media (max-width: 767px) {
+    .special-plan p {
+        font-size: 20px;
+    }
+}
+
+.special-plan button {
+    margin: 40px;
+    border: none;
+    background: var(--main-color);
+    padding: 15px 35px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.special-plan button:hover {
+    color: black;
+}
+
+    /* end pricing  */
+     /* start subscribe */
+.subscribe {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url("../image/sky.jpg");
+    background-size: cover;
+}
+
+.subscribe .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe .container .subs {
+    display: flex;
+}
+.subscribe .container .subs form {
+    display: flex;
+    height: 60px;
+    position: relative;
+    width: 650px;
+    max-width: 100%;  
+}
+.subscribe .container .subs i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.subscribe .container .subs form input[type='email']{
+    width: 100%;
+    text-indent: 50px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.subscribe .container .subs form input[type='email']:focus {
+    outline: var(--main-color);
+}
+
+.subscribe .container .subs form input[type='submit']{
+    right: 1px;
+    top: 1px;
+    height: 96%;
+    width: 154px;
+    position: absolute;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+}
+
+.subscribe .container p {
+    color: white;
+    line-height: 1.6;
+    margin-left: 40px;
+}
+
+@media (max-width: 767px) {
+    .subscribe .container {
+        flex-direction: column;
+    }
+    .subscribe .container .subs form {
+        width: 300px;
+    }
+    .subscribe .container p {
+        margin: 30px 0 0;
+    }
+    .subscribe  input[type='submit'] {
+        width: 100px !important;
+    }
+}
+@media (max-width: 991px) {
+    .subscribe .container {
+        flex-direction: column;
+    }
+    .subscribe .container p {
+        margin: 30px 0 0;
+    }
+}
+     /* end subscribe */
+     /* start contact  */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.contact .content form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+.contact .content form input:focus,
+.contact .content form textarea:focus{
+    outline: var(--main-color);
+}
+
+.contact .content form .angolar {
+    margin-bottom: 30px;
+    height: 50px;
+    padding: 20px;
+} 
+
+.contact .content form textarea.angolar {
+    height: 200px;
+}
+
+.contact .content form input[type=submit] {
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    margin-left: auto;
+    color: white;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.contact .content .info {
+    flex-basis: 25%;
+}
+
+.contact .content .info h4{
+    margin-bottom: 30px;
+}
+
+.contact .content .info .phone {
+    display: block;
+    color: #777;
+}
+
+.contact .content .info span:last-of-type {
+    margin-bottom: 100px;
+}
+
+.contact .content .info address {
+    color: #777;
+    line-height: 2;
+}
+
+@media (max-width: 767px) {
+    .contact .content {
+        flex-direction: column;
+    }
+}
+     /* end contact  */
+     /* start footer  */
+footer {
+    padding-top: var(--section-padding);
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../image/footer.jpg");
+    background-size: cover;
+    color: white;
+}
+
+footer img {
+    margin-bottom: 10px;
+}
+
+footer p:first-of-type {
+    padding: 20px 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+
+footer .icons {
+    margin-bottom: 10px;
+}
+
+footer .icons i{
+    color: var(--main-color);
+    padding: 10px 12px;
+}
+
+footer  p:last-of-type span{
+    color: var(--main-color);
+}
+footer  p:last-of-type span:hover{
+    color: white;
+}
+     /* end footer  */
